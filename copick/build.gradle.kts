@@ -53,9 +53,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-group = "com.today.learn"
-version = "1.0.0"
-
 publishing {
     publications {
         register<MavenPublication>("ContactPicker") {
@@ -66,12 +63,6 @@ publishing {
             afterEvaluate {
                 from(components["release"])
             }
-        }
-    }
-    repositories {
-        maven {
-            name = "rhony"
-            url = uri(layout.buildDirectory.dir("learn"))
         }
     }
 }
