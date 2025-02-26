@@ -16,6 +16,7 @@ import com.learn.contactpicker.ui.theme.ContactPickerTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        CoPick.instance.getCurrentTimeMillis()
         enableEdgeToEdge()
         setContent {
             ContactPickerTheme {

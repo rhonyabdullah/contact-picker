@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Contact Picker"
 include(":app")
+include(":copick")
