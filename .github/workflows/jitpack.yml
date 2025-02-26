@@ -1,2 +1,11 @@
-- name: autojitpack
-  uses: badasintended/autojitpack@v1
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: badasintended/autojitpack@v1
+        with:
+          version: ${{ github.event.release.tag_name }}
